@@ -20,4 +20,14 @@ jobs:
           # If needed, can use 
           # labeled: bug, needs-triage
           # label-operator: OR
+  add-to-project-classic:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create or Update Project Card
+        uses: peter-evans/create-or-update-project-card@v2
+        with:
+          project-location: pact-foundation
+          project-number: 17
+          column-name: New Issue
+          issue-number: ${{ github.event.number }}
 
