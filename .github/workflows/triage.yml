@@ -26,6 +26,7 @@ jobs:
       - name: Create or Update Project Card
         uses: peter-evans/create-or-update-project-card@v2
         with:
+          token: ${{ secrets.TRIAGE_PROJECT_ISSUE_TOKEN }}
           project-location: pact-foundation
           project-number: 17
           column-name: New Issue
