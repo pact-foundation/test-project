@@ -3,6 +3,7 @@ name: SmartBear Supported Issue Label Added
 on:
   issues:
     types:
+      - opened
       - labeled
 
 jobs:
